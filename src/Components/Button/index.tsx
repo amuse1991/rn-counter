@@ -11,7 +11,7 @@ interface Props {
 
 const Button = ({iconName, onPress}:Props) => {
   return (
-    <Container>
+    <Container onPress={onPress}>
       <Icon source={iconName === 'plus' ? require('../../../assets/add.png') : require('../../../assets/remove.png')}/>
     </Container>
   )
